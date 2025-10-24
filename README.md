@@ -134,4 +134,5 @@ W pliku `config.py` można ustawić wszystkie parametry działania bota:
 ## 📜 Licencja
 
 Projekt udostępniany na licencji **MIT License**.
+
 Autor: **Marcin Filipiak**, 2025.
