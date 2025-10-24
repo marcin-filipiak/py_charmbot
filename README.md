@@ -8,8 +8,6 @@
 | \____      | |  | |   /  /    \  \    | | \ \     | | \/ | |    | |_| |    | |__| |       | |      
  \_____|     |_|  |_|   \_/      \_/    |_|  \_\    |_|    |_|    |____/      \____/        |_|       
 
-Copyright (c) 2025 Marcin Filipiak  
-Licensed under the MIT License
 ```
 
 ---
