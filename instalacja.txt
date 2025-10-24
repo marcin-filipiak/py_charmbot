@@ -1,0 +1,26 @@
+sudo apk add py3-aiohttp py3-multidict py3-yarl py3-async-timeout
+
+w /etc/init.d utworzyć plik charmbot i wpisać:
+
+        #!/sbin/openrc-run
+
+        name="charmbot"
+        command="/home/frog/charmbot/charmbot.py"
+        command_user="frog"
+        command_background="yes"
+        pidfile="/var/run/${name}.pid"
+        directory="/home/frog/girlbot"
+
+        depend() {
+            need net
+        }
+
+
+w /home/frog/charmbot/start_charmbot.bash
+
+        #!/bin/bash
+        export PYTHONPATH=/home/frog/charmbot
+        cd /home/frog/charmbot
+        exec python3 charmbot.py >> charmbot.log 2>&1
+
+potem: rc-update add charmbot default

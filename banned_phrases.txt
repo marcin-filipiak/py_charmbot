@@ -1,0 +1,2 @@
+bannedPhrase
+next Banned Phrase
